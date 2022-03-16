@@ -1,0 +1,16 @@
+{
+    "tasks": [
+      {
+        "title": "Submit report",
+        "details": "The detailed report",
+        "category": "work",
+        "id": 1
+      },
+      {
+        "title": "Study new course",
+        "body": "Coursera, edX",
+        "author": "school",
+        "id": 2
+      }
+    ]
+  }

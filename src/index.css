@@ -1,13 +1,73 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #484D6D;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: thin solid #484D6D;
+}
+.navbar h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #efe9f4;
+  border-radius: 7px;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: #efe9f4;
+  font-weight: 600;
+  background-color: #484D6D;
+}
+.todo {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.todo-preview{
+  
+  width: 200px;
+  border-radius: 10px;
+  background-color: #efe9f4;
+  padding: 10px;
+}
+.header {
+  padding-bottom: 30px;
+  display: flex;
+}
+.header img {
+  height: 20px;
+}
+.marker-work{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ee6352;
+}
+.marker-school{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #08b2e3;
+}
+.marker-relationship{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #57a773;
 }
