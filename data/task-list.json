@@ -1,16 +1,40 @@
 {
-    "tasks": [
-      {
-        "title": "Submit report",
-        "details": "The detailed report",
-        "category": "work",
-        "id": 1
-      },
-      {
-        "title": "Study new course",
-        "body": "Coursera, edX",
-        "author": "school",
-        "id": 2
-      }
-    ]
-  }
+  "tasks": [
+    {
+      "title": "Submit report",
+      "body": "The detailed report",
+      "category": "work",
+      "id": 1
+    },
+    {
+      "title": "Study new course",
+      "body": "Coursera, edX",
+      "category": "school",
+      "id": 2
+    },
+    {
+      "title": "Study new course, Study new course, Study new course, Study new course",
+      "body": "Coursera, edX",
+      "category": "random",
+      "id": 3
+    },
+    {
+      "title": "Study new course",
+      "body": "Coursera, edX",
+      "category": "relationship",
+      "id": 4
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet?",
+      "body": "Coursera, edX",
+      "category": "relationship",
+      "id": 5
+    },
+    {
+      "category": "work",
+      "title": "Designing Website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestias modi eligendi veniam nihil nemo quisquam, maxime esse, incidunt ratione pariatur fuga consectetur laudantium at sed eius. Tenetur, adipisci harum?",
+      "id": 6
+    }
+  ]
+}

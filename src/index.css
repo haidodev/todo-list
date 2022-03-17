@@ -4,6 +4,10 @@
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   color: #484D6D;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -17,57 +21,119 @@
 .navbar h1 {
   font-family: 'Playfair Display', serif;
 }
-
 .navbar .links {
   margin-left: auto;
 }
-.navbar a {
+.navbar .links a {
   margin-left: 16px;
-  text-decoration: none;
   text-transform: uppercase;
   background-color: #efe9f4;
   border-radius: 7px;
   padding: 10px;
 }
-.navbar a:hover {
+.navbar .links a:hover {
   color: #efe9f4;
   font-weight: 600;
   background-color: #484D6D;
 }
-.todo {
+
+
+
+.content {
+  max-width: 600px;
+  margin: auto;
+} 
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
 .todo-preview{
-  
-  width: 200px;
+  flex: 0 1 175px;
+  margin: 5px;
   border-radius: 10px;
-  background-color: #efe9f4;
-  padding: 10px;
+  background-color: #484D6D;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 .header {
-  padding-bottom: 30px;
+  background-color: #efe9f4;
+  padding: 10px;
+  padding: 10px auto;
   display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header .todo-command {
+  margin-left: auto;
 }
 .header img {
   height: 20px;
+  margin-left: 10px;
+  color: #484D6D;
 }
-.marker-work{
+.marker{
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  background-color: #efe9f4;
+  
+}
+.work {
   background-color: #ee6352;
 }
-.marker-school{
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+.school {
   background-color: #08b2e3;
 }
-.marker-relationship{
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+.relationship {
   background-color: #57a773;
+}
+.title-preview {
+  padding: 10px;
+  color: #efe9f4;
+}
+.createTask {
+  flex: 0 1 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: medium solid #484D6D;
+  border-radius: 10px;
+  font-size: 50px;
+  user-select: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* Create page*/
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  margin: 30px auto;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #484D6D;
+  color: #efe9f4;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }

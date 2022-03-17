@@ -1,16 +1,15 @@
 import TODOList from "./TODOList";
+import useFetch from "./useFetch";
 
 const Home = () => {
-    const todo = {
-        "title": "Submit report Submit report Submit report Submit report Submit report Submit report",
-        "details": "The detailed report",
-        "category": "work",
-        "id": 1
-      }
+  const {data:todoList, isPending, error} = useFetch('http://localhost:8000/tasks');
     return ( 
         <div className="home">
-            <TODOList todo={todo}/>
+            { error && <div>{error}</div>}
+            { isPending && <div>Loading...</div> }
+            { todoList && <TODOList todoList={todoList}/>}
         </div>
+        
      );
 }
  
